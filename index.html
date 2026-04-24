@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qazaq Drive | Нағыз Тұлпарлар Орталығы</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;600;900&display=swap');
+        
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .neon-text {
+            text-shadow: 0 0 10px #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800 sticky top-0 bg-black z-50">
+        <h1 class="text-3xl font-black italic tracking-tighter text-yellow-500" style="font-family: 'Orbitron';">QAZAQ <span class="text-white">DRIVE</span></h1>
+        <div class="space-x-8 hidden md:flex font-semibold">
+            <a href="#" class="hover:text-yellow-500 transition">Көліктер</a>
+            <a href="#" class="hover:text-yellow-500 transition">Сату</a>
+            <a href="#" class="hover:text-yellow-500 transition">Тексеру</a>
+            <a href="#" class="hover:text-yellow-500 transition">Байланыс</a>
+        </div>
+        <button class="bg-yellow-500 text-black px-6 py-2 rounded-full font-bold hover:scale-105 transition">Кіру</button>
+    </nav>
+
+    <header class="hero-gradient h-[80vh] flex flex-col justify-center items-center text-center px-4">
+        <h2 class="text-5xl md:text-7xl font-black mb-4 uppercase tracking-widest">Тұлпарыңды <span class="text-yellow-500">осында</span> тап</h2>
+        <p class="text-xl text-gray-300 max-w-2xl mb-8">Қазақстандағы ең жылдам әрі ең сенімді автомаркетплейс. Тек тексерілген көліктер.</p>
+        
+        <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl flex flex-wrap gap-4 w-full max-w-4xl border border-white/20">
+            <input type="text" placeholder="Маркасы..." class="flex-1 bg-transparent border-b border-gray-500 p-2 outline-none focus:border-yellow-500">
+            <select class="bg-transparent border-b border-gray-500 p-2 outline-none focus:border-yellow-500">
+                <option class="text-black">Барлық қалалар</option>
+                <option class="text-black">Алматы</option>
+                <option class="text-black">Астана</option>
+            </select>
+            <button class="bg-yellow-500 text-black px-10 py-3 rounded-lg font-bold hover:bg-yellow-400 transition">Іздеу</button>
+        </div>
+    </header>
+
+    <main class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h3 class="text-3xl font-bold mb-2">ТОП Хабарландырулар</h3>
+                <div class="h-1 w-20 bg-yellow-500"></div>
+            </div>
+            <a href="#" class="text-yellow-500 hover:underline">Барлығын көру</a>
+        </div>
+        <div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover" alt="Camry">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Toyota Camry 75</h4>
+            <span class="text-yellow-500 font-bold">18,500,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2021</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 45,000 км</span>
+            <span><i class="fa fa-gas-pump text-yellow-500 mr-1"></i> 2.5L</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+<div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-D002M9iZ7DxCw92DCMHCdDVxo0VhXcfbA&s" class="h-56 w-full object-cover" alt="LC300">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Toyota LC 300</h4>
+            <span class="text-yellow-500 font-bold">58,000,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2022</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 12,000 км</span>
+            <span><i class="fa fa-gas-pump text-yellow-500 mr-1"></i> 3.5L Turbo</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+<div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover" alt="Tesla">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Tesla Model S Plaid</h4>
+            <span class="text-yellow-500 font-bold">42,000,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2023</span>
+            <span><i class="fa fa-bolt text-yellow-500 mr-1"></i> EV</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 5,000 км</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+<div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="https://kolesa-photos.kcdn.online/kolesa-read/903125632f2bf002c16d2687ec3f2d9277f3a9d4-full.jpg" class="h-56 w-full object-cover" alt="Audi">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Audi RS7 Performance</h4>
+            <span class="text-yellow-500 font-bold">62,000,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2023</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 3,200 км</span>
+            <span><i class="fa fa-gas-pump text-yellow-500 mr-1"></i> 4.0L V8</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+<div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="https://daily-motor.ru/wp-content/uploads/2025/10/2025-rolls-royce-cullinan-899980-1040408621.jpg" class="h-56 w-full object-cover" alt="RR">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Rolls-Royce Cullinan</h4>
+            <span class="text-yellow-500 font-bold">250,000,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2022</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 1,500 км</span>
+            <span><i class="fa fa-gem text-yellow-500 mr-1"></i> Luxury</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+<div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZqChNskhhdaLECFI-bB66RfgJQ-_WnyeTg&s" class="h-56 w-full object-cover" alt="LX600">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Lexus LX 600</h4>
+            <span class="text-yellow-500 font-bold">75,000,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2023</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 0 км</span>
+            <span><i class="fa fa-gas-pump text-yellow-500 mr-1"></i> 3.5L V6</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+<div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover" alt="Escalade">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Cadillac Escalade V</h4>
+            <span class="text-yellow-500 font-bold">92,000,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2023</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 500 км</span>
+            <span><i class="fa fa-gas-pump text-yellow-500 mr-1"></i> 6.2L V8</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+<div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover" alt="Dodge">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Dodge Challenger Hellcat</h4>
+            <span class="text-yellow-500 font-bold">38,000,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2021</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 22,000 км</span>
+            <span><i class="fa fa-fire text-yellow-500 mr-1"></i> 6.2L Supercharged</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+<div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="https://images.unsplash.com/photo-1606220838315-056192d5e927?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover" alt="Range Rover">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Range Rover SV</h4>
+            <span class="text-yellow-500 font-bold">110,000,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2023</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 100 км</span>
+            <span><i class="fa fa-gas-pump text-yellow-500 mr-1"></i> 4.4L V8</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+<div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+    <img src="data:image/jpeg;base64,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" class="h-56 w-full object-cover" alt="Urus">
+    <div class="p-6">
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-xl font-bold">Lamborghini Urus</h4>
+            <span class="text-yellow-500 font-bold">185,000,000 ₸</span>
+        </div>
+        <div class="flex gap-4 text-gray-400 text-sm mb-6">
+            <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2022</span>
+            <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 4,800 км</span>
+            <span><i class="fa fa-bolt text-yellow-500 mr-1"></i> 4.0L Bi-Turbo</span>
+        </div>
+        <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+    </div>
+</div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCC478jmlvLPb1BcbSdAEQLelahYw3o8izg&s" class="h-56 w-full object-cover" alt="Car">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold">BMW M4 Competition</h4>
+                        <span class="text-yellow-500 font-bold">45,000,000 ₸</span>
+                    </div>
+                    <div class="flex gap-4 text-gray-400 text-sm mb-6">
+                        <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2022</span>
+                        <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 15,000 км</span>
+                        <span><i class="fa fa-gas-pump text-yellow-500 mr-1"></i> 3.0L</span>
+                    </div>
+                    <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+                </div>
+            </div>
+
+            <div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover" alt="Car">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold">Mercedes-Benz G63</h4>
+                        <span class="text-yellow-500 font-bold">82,500,000 ₸</span>
+                    </div>
+                    <div class="flex gap-4 text-gray-400 text-sm mb-6">
+                        <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2021</span>
+                        <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 8,000 км</span>
+                        <span><i class="fa fa-gas-pump text-yellow-500 mr-1"></i> 4.0L</span>
+                    </div>
+                    <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+                </div>
+            </div>
+
+            <div class="car-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=80" class="h-56 w-full object-cover" alt="Car">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold">Porsche 911 GT3</h4>
+                        <span class="text-yellow-500 font-bold">95,000,000 ₸</span>
+                    </div>
+                    <div class="flex gap-4 text-gray-400 text-sm mb-6">
+                        <span><i class="fa fa-calendar text-yellow-500 mr-1"></i> 2023</span>
+                        <span><i class="fa fa-tachometer-alt text-yellow-500 mr-1"></i> 2,500 км</span>
+                        <span><i class="fa fa-gas-pump text-yellow-500 mr-1"></i> 4.0L</span>
+                    </div>
+                    <button class="w-full border border-yellow-500 text-yellow-500 py-3 rounded-xl font-bold hover:bg-yellow-500 hover:text-black transition">Толығырақ</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-black border-t border-gray-800 py-12 px-6 text-center text-gray-500">
+        <p class="mb-4 font-bold text-white">QAZAQ DRIVE — 2026. Барлық құқықтар қорғалған.</p>
+        <div class="flex justify-center space-x-6 text-2xl">
+            <a href="#" class="hover:text-yellow-500"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-yellow-500"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="hover:text-yellow-500"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qazaq Drive | Нағыз Тұлпарлар Орталығы</title>
+    <script src="https://tailwindcss.com"></script>
+    <link href="https://cloudflare.com" rel="stylesheet">
+    <style>
+        @import url('https://googleapis.com');
+        body { background-color: #0a0a0a; color: #ffffff; font-family: 'Montserrat', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://unsplash.com');
+            background-size: cover; background-position: center;
+        }
+        .news-card { transition: 0.3s; border: 1px solid #333; }
+        .news-card:hover { border-color: #eab308; box-shadow: 0 0 15px rgba(234,179,8,0.2); }
+    </style>
+</head>
+<body>
+
+    <!-- 1. АҚПАРАТТЫҚ ПАНЕЛЬ (Ауа райы және Валюта) -->
+    <div class="bg-[#111] border-b border-gray-800 p-3 sticky top-0 z-[60]">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4 text-xs md:text-sm">
+            <!-- Ауа райы -->
+            <div id="weather" class="flex items-center gap-2">
+                <i class="fa fa-cloud-sun text-yellow-500"></i>
+                <span id="weather-info">Жүктелуде...</span>
+            </div>
+            <!-- Валюта -->
+            <div class="flex gap-4 font-bold">
+                <span>USD <span id="usd" class="text-green-500">...</span></span>
+                <span>EUR <span id="eur" class="text-green-500">...</span></span>
+                <span>RUB <span id="rub" class="text-green-500">...</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800 bg-black sticky top-[44px] md:top-[48px] z-50">
+        <h1 class="text-2xl md:text-3xl font-black italic text-yellow-500" style="font-family: 'Orbitron';">QAZAQ <span class="text-white">DRIVE</span></h1>
+        <button id="addNewsBtn" class="bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold text-xs hover:scale-105 transition">
+            + ЖАҢАЛЫҚ ҚОСУ
+        </button>
+    </nav>
+
+    <!-- ЖАҢАЛЫҚТАР БӨЛІМІ (Динамикалық) -->
+    <section class="py-12 px-6 max-w-7xl mx-auto">
+        <h3 class="text-2xl font-bold mb-8 uppercase italic border-l-4 border-yellow-500 pl-4">Соңғы Жаңалықтар</h3>
+        <div id="news-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Жаңалықтар осында шығады -->
+        </div>
+    </section>
+
+    <!-- КӨЛІКТЕР БӨЛІМІ (Мысалы) -->
+    <main class="py-12 px-6 max-w-7xl mx-auto">
+        <h3 class="text-2xl font-bold mb-8 uppercase italic">ТОП Көліктер</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Көлік карточкасы -->
+            <div class="bg-[#1a1a1a] rounded-2xl overflow-hidden border border-gray-800 hover:border-yellow-500 transition">
+                <img src="https://unsplash.com" class="h-48 w-full object-cover">
+                <div class="p-6">
+                    <h4 class="text-xl font-bold">Toyota Camry 75</h4>
+                    <p class="text-yellow-500 font-bold mt-2">18,500,000 ₸</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // --- 1. ЖАҢАЛЫҚТАР МАССИВІ ---
+        let news = [
+            { title: "Tesla Қазақстанға ресми келді", desc: "Алматыда алғашқы сервистік орталық ашылуда.", date: "24.04.2026" },
+            { title: "Жаңа Toyota Land Cruiser 350", desc: "Жапондық марка жаңа буынды таныстыруға дайын.", date: "23.04.2026" },
+            { title: "Жанармай бағасы өзгерді", desc: "Бүгіннен бастап бекеттерде баға 5%-ға төмендеді.", date: "22.04.2026" }
+        ];
+
+        function renderNews() {
+            const container = document.getElementById('news-container');
+            container.innerHTML = news.map(item => `
+                <div class="news-card bg-[#151515] p-6 rounded-2xl">
+                    <span class="text-xs text-yellow-500 font-bold">${item.date}</span>
+                    <h4 class="text-lg font-bold mt-2 mb-3">${item.title}</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">${item.desc}</p>
+                </div>
+            `).join('');
+        }
+
+        // Жаңалық қосу батырмасы
+        document.getElementById('addNewsBtn').onclick = () => {
+            const title = prompt("Жаңалық тақырыбы:");
+            const desc = prompt("Мәтіні:");
+            if (title && desc) {
+                news.unshift({ title, desc, date: "Бүгін" });
+                renderNews();
+            }
+        };
+
+        // --- 2. АУА РАЙЫ API ---
+        async function fetchWeather() {
+            try {
+                // Тегін API қолдану (Алматы қаласы үшін мысал)
+                const response = await fetch('https://open-meteo.com');
+                const data = await response.json();
+                const temp = data.current_weather.temperature;
+                document.getElementById('weather-info').innerText = `Алматы: ${temp}°C, Ашық аспан`;
+            } catch {
+                document.getElementById('weather-info').innerText = "Ауа райы белгісіз";
+            }
+        }
+
+        // --- 3. ВАЛЮТА API ---
+        async function fetchCurrency() {
+            try {
+                const response = await fetch('https://exchangerate-api.com');
+                const data = await response.json();
+                // KZT бағасын USD, EUR, RUB үшін есептеу
+                document.getElementById('usd').innerText = (1 / data.rates.USD).toFixed(1);
+                document.getElementById('eur').innerText = (1 / data.rates.EUR).toFixed(1);
+                document.getElementById('rub').innerText = (1 / data.rates.RUB).toFixed(2);
+            } catch {
+                document.getElementById('usd').innerText = "450";
+                document.getElementById('eur').innerText = "485";
+                document.getElementById('rub').innerText = "4.9";
+            }
+        }
+
+        // Бастапқы іске қосу
+        renderNews();
+        fetchWeather();
+        fetchCurrency();
+    </script>
+
+<!-- ЧАТ БОТ ИНТЕРФЕЙСІ -->
+<div id="chat-wrapper" class="fixed bottom-6 right-6 z-[100] font-sans">
+    <!-- Чатты ашу батырмасы -->
+    <button id="chat-toggle" class="bg-yellow-500 text-black w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300">
+        <i class="fa fa-comments text-2xl" id="chat-icon"></i>
+    </button>
+
+    <!-- Чат терезесі (бастапқыда жасырулы) -->
+    <div id="chat-window" class="hidden absolute bottom-20 right-0 w-80 md:w-96 bg-[#1a1a1a] border border-gray-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col">
+        <!-- Чат тақырыбы -->
+        <div class="bg-yellow-500 p-4 text-black flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center">
+                    <i class="fa fa-robot text-yellow-500"></i>
+                </div>
+                <div>
+                    <p class="font-bold leading-none">Qazaq Drive Bot</p>
+                    <span class="text-[10px] uppercase font-bold opacity-70">Онлайн</span>
+                </div>
+            </div>
+            <button id="close-chat" class="text-xl">&times;</button>
+        </div>
+
+        <!-- Хабарламалар аймағы -->
+        <div id="chat-messages" class="h-80 overflow-y-auto p-4 space-y-4 flex flex-col">
+            <div class="bg-gray-800 p-3 rounded-2xl rounded-tl-none self-start max-w-[80%] text-sm">
+                Сәлем! Мен Qazaq Drive көмекшісімін. Сізге қалай көмектесе аламын? 😊
+            </div>
+        </div>
+
+        <!-- Жазу аймағы -->
+        <div class="p-4 border-t border-gray-800 flex gap-2">
+            <input type="text" id="chat-input" placeholder="Сұрақ қойыңыз..." class="flex-1 bg-black border border-gray-700 p-3 rounded-xl outline-none focus:border-yellow-500 text-sm">
+            <button id="send-chat" class="bg-yellow-500 text-black px-4 rounded-xl font-bold">
+                <i class="fa fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ЧАТ БОТ ИНТЕРФЕЙСІ -->
+<div id="chat-wrapper" class="fixed bottom-6 right-6 z-[100] font-sans">
+    <!-- Чатты ашу батырмасы -->
+    <button id="chat-toggle" class="bg-yellow-500 text-black w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300">
+        <i class="fa fa-comments text-2xl" id="chat-icon"></i>
+    </button>
+
+    <!-- Чат терезесі (бастапқыда жасырулы) -->
+    <div id="chat-window" class="hidden absolute bottom-20 right-0 w-80 md:w-96 bg-[#1a1a1a] border border-gray-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col">
+        <!-- Чат тақырыбы -->
+        <div class="bg-yellow-500 p-4 text-black flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center">
+                    <i class="fa fa-robot text-yellow-500"></i>
+                </div>
+                <div>
+                    <p class="font-bold leading-none">Qazaq Drive Bot</p>
+                    <span class="text-[10px] uppercase font-bold opacity-70">Онлайн</span>
+                </div>
+            </div>
+            <button id="close-chat" class="text-xl">&times;</button>
+        </div>
+
+        <!-- Хабарламалар аймағы -->
+        <div id="chat-messages" class="h-80 overflow-y-auto p-4 space-y-4 flex flex-col">
+            <div class="bg-gray-800 p-3 rounded-2xl rounded-tl-none self-start max-w-[80%] text-sm">
+                Сәлем! Мен Qazaq Drive көмекшісімін. Сізге қалай көмектесе аламын? 😊
+            </div>
+        </div>
+
+        <!-- Жазу аймағы -->
+        <div class="p-4 border-t border-gray-800 flex gap-2">
+            <input type="text" id="chat-input" placeholder="Сұрақ қойыңыз..." class="flex-1 bg-black border border-gray-700 p-3 rounded-xl outline-none focus:border-yellow-500 text-sm">
+            <button id="send-chat" class="bg-yellow-500 text-black px-4 rounded-xl font-bold">
+                <i class="fa fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const chatToggle = document.getElementById('chat-toggle');
+    const chatWindow = document.getElementById('chat-window');
+    const closeChat = document.getElementById('close-chat');
+    const chatInput = document.getElementById('chat-input');
+    const sendChat = document.getElementById('send-chat');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatIcon = document.getElementById('chat-icon');
+
+    // Чатты ашу/жабу
+    chatToggle.onclick = () => {
+        chatWindow.classList.toggle('hidden');
+        chatIcon.classList.toggle('fa-comments');
+        chatIcon.classList.toggle('fa-times');
+    };
+
+    closeChat.onclick = () => {
+        chatWindow.classList.add('hidden');
+        chatIcon.classList.add('fa-comments');
+        chatIcon.classList.remove('fa-times');
+    };
+
+    // Боттың жауап беру логикасы
+    function botReply(userText) {
+        let reply = "Кешіріңіз, мен бұл сұрақты түсінбедім. Операторға хабарласу үшін 'Байланыс' бөлімін қараңыз.";
+        const text = userText.toLowerCase();
+
+        if (text.includes("Сәлем") || text.includes("салам")) reply = "Сәлем! Көлік іздеп жүрсіз бе?";
+        else if (text.includes("Баға") || text.includes("қанша")) reply = "Біздегі көліктер 10 млн ₸-ден басталады. Тізімнен қарап көріңіз.";
+        else if (text.includes("Кредит") || text.includes("бөліп төлеу")) reply = "Иә, бізде банктер арқылы бөліп төлеу қарастырылған.";
+        else if (text.includes("Қалай тіркеледі")) reply = "Жоғарыдағы 'Кіру' батырмасын басып, тіркеле аласыз.";
+
+        setTimeout(() => {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = "bg-gray-800 p-3 rounded-2xl rounded-tl-none self-start max-w-[80%] text-sm";
+            msgDiv.innerText = reply;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 1000);
+    }
+
+    // Хабарлама жіберу
+    function sendMessage() {
+        const text = chatInput.value.trim();
+        if (text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = "bg-yellow-500 text-black p-3 rounded-2xl rounded-tr-none self-end max-w-[80%] text-sm font-medium";
+            msgDiv.innerText = text;
+            chatMessages.appendChild(msgDiv);
+            chatInput.value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            botReply(text);
+        }
+    }
+
+    sendChat.onclick = sendMessage;
+    chatInput.onkeypress = (e) => { if (e.key === 'Enter') sendMessage(); };
+</script>
+
+
+</body>
+</html>
